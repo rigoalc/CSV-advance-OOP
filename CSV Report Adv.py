@@ -20,11 +20,8 @@ class CSVReport:
     def run(self):
         
         
-        menu = (" 1) See breakdown by year"),
-        ("2) See breakdown by year for a single month"),
-        ("3) Quit")
+
         
-        print(menu)
         header = True  
         year_data = {}
         print("Year |  Min |  Max |  Avg") #header 
@@ -58,9 +55,27 @@ class CSVReport:
                 
             print("{} | {:=4} | {:>.1f} | {:>.1f}".format (year, minimun, maximun, average))#Print the results
 #How to read the values
+menu = (" 1) See breakdown by year","2) See breakdown by year for a single month","3) Quit")
         
-my_csv_instance = CSVReport()
-my_csv_instance.run()
+print(menu)
+
+userinput = input("Please enter 1, 2, or 3.")
+userinput = int(userinput)
+
+if userinput == 1:  
+             
+    my_csv_instance = CSVReport()
+    my_csv_instance.run()
+    
+elif userinput == 2:
+    print("Monthly")
+    
+elif userinput == 3:
+    print("Good Bye")
+    
+    
+        
+        
 
 
 #The total development time is 7 hs.
