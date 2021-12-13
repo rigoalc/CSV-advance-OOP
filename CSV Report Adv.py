@@ -114,9 +114,9 @@ elif userinput == 3:
         
 
 
-#The total development time is 7 hs.
+#The total development time is 3 hs.
 
 
 #This program reads the data from a list of temperature data (in Fahrenheit) for Grand Rapids, MI from 1995 until 2020. 
-#The program will organize, calculate and print the average, min, max temperature by year.
-#Run the program executing the comand "my_csv_instance.run()"
+#The program will organize, calculate and print the average, min, max temperature by year, or month.
+#The user will select " 1) See breakdown by year","2) See breakdown by year for a single month","3) Quit"
